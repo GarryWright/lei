@@ -10,6 +10,42 @@
             <link href="css/bootstrap.css" rel="stylesheet">
               <style type='text/css'>
                 /* <![CDATA[ */
+                  /* Sticky footer styles
+                  -------------------------------------------------- */
+
+                  html,
+                  body {
+                    height: 100%;
+                    /* The html and body elements cannot have any padding or margin. */
+                  }
+
+                  /* Wrapper for page content to push down footer */
+                  #wrap {
+                    min-height: 100%;
+                    height: auto !important;
+                    height: 100%;
+                    /* Negative indent footer by it's height */
+                    margin: 0 auto -60px;
+                  }
+
+                  /* Set the fixed height of the footer here */
+                  #push,
+                  #footer {
+                    height: 60px;
+                  }
+                  #footer {
+                    background-color: #f5f5f5;
+                  }
+
+                  /* Lastly, apply responsive CSS fixes as necessary */
+                  @media (max-width: 767px) {
+                    #footer {
+                      margin-left: -20px;
+                      margin-right: -20px;
+                      padding-left: 20px;
+                      padding-right: 20px;
+                    }
+                  }
                   body {
                     padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
                   }
@@ -130,12 +166,11 @@
     </div>
     <div id="footer">
       <div class="container">
-        <p class="muted credit">
+        <p class="muted credit" style="margin-top:10px">
           <a href="http://dataset.io">
             <img src="img/datasetio.png" width="120" style="margin-right:30px"/>
+            Powered by Atlas | Published at Fri Dec 28 15:04:18 EST 2012
           </a>
-          <p>Powered By Atlas</p>
-          <p>Published at Fri Dec 28 14:30:34 EST 2012</p>
         </p>
       </div>
     </div>
