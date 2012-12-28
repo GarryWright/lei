@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Geo Region</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+          <meta content="" name="author">
+            <!-- Le styles -->
+            <link href="css/bootstrap.css" rel="stylesheet">
+              <style type='text/css'>
+                /* <![CDATA[ */
+                  body {
+                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+                  }
+                    %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}
+                  / HTML5 shim, for IE6-8 support of HTML5 elements
+                  /[if lt IE 9]
+                    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                  / Fav and touch icons
+                  %link{:href => "ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+                    %link{:href => "ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+                      %link{:href => "ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+                        %link{:href => "ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+                          %link{:href => "ico/favicon.png", :rel => "shortcut icon"}
+                /* ]]> */
+              </style>
+            </link>
+          </meta>
+        </meta>
+      </meta>
+    </meta>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">
+            <img src="img/logo.png" width="45" style="margin-right:30px"/>
+            Legal Entity Identifier 1.3.0
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="entities.html">Entities</a>
+              </li>
+              <li>
+                <a href="sources.html">Sources</a>
+              </li>
+              <li>
+                <a href="contributors.html">Contributors</a>
+              </li>
+              <li>
+                <a href="resources.html">Downloads</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Geo Region</h2>
+      <p style="margin-bottom:30px">
+        Each occurrence of Geographic Region names and identifies one geographic area. The Geographic Area  may be within a single country or may extend across multiple countries as indicated by the Region Span attribute. Each Geographic Area  in turn has one of more Tax or Regulatory Authorities that oversee Legal Entities.
+      </p>
+      <img src="node-GeoRegion.png"/>
+      <h2>Attributes</h2>
+      <p>
+        The attributes show relationships between the data group and none-group data nodes,  these are data nodes that
+        carry individual pieces of information
+      </p>
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Documentation</th>
+          <th>Sample Value</th>
+          <th>Available Sources</th>
+        </tr>
+        <tr>
+          <td>GeoRegionName</td>
+          <td>String</td>
+          <td>The name for this Geographic Region.</td>
+          <td>North America</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>GeoRegionType</td>
+          <td>Enumeration</td>
+          <td>An abbreviation or term that indicates the type or purpose of The Region.</td>
+          <td>GEO AREA</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>RegionSpan</td>
+          <td>String</td>
+          <td>Desigates if this Region is: 
+    &quot;WITHIN&quot; one Cournty 
+    &quot;ACROSS&quot; multiple Countries</td>
+          <td></td>
+          <td>
+          </td>
+        </tr>
+      </table>
+      <h2>Relationships</h2>
+      <p>
+        The group relationships show relationships between this group and other data groups in the schema.
+      </p>
+      <table class="table">
+        <tr>
+          <th>Relationship</th>
+          <th>Cardinality</th>
+          <th>Target</th>
+        </tr>
+        <tr>
+          <td>Country Region Relationship</td>
+          <td>HasMany</td>
+          <td>
+            <a href="node-CountryRegionRelationship.html">CountryRegionRelationship</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Tax or Regulatory Authority</td>
+          <td>HasMany</td>
+          <td>
+            <a href="node-TaxorRegulatoryAuthority.html">TaxorRegulatoryAuthority</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">
+          <a href="http://dataset.io">
+            <img src="img/datasetio.png" width="120" style="margin-right:30px"/>
+          </a>
+          <p>Powered By Atlas</p>
+          <p>Published at Fri Dec 28 13:56:55 EST 2012</p>
+        </p>
+      </div>
+    </div>
+    <!-- /container -->
+    <!--
+      Le javascript
+      ==================================================
+    -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

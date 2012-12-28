@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Legal Entity Identifier</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+          <meta content="" name="author">
+            <!-- Le styles -->
+            <link href="css/bootstrap.css" rel="stylesheet">
+              <style type='text/css'>
+                /* <![CDATA[ */
+                  body {
+                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+                  }
+                    %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}
+                  / HTML5 shim, for IE6-8 support of HTML5 elements
+                  /[if lt IE 9]
+                    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                  / Fav and touch icons
+                  %link{:href => "ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+                    %link{:href => "ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+                      %link{:href => "ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+                        %link{:href => "ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+                          %link{:href => "ico/favicon.png", :rel => "shortcut icon"}
+                /* ]]> */
+              </style>
+            </link>
+          </meta>
+        </meta>
+      </meta>
+    </meta>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">
+            <img src="img/logo.png" width="45" style="margin-right:30px"/>
+            Legal Entity Identifier 1.3.0
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="entities.html">Entities</a>
+              </li>
+              <li class="active">
+                <a href="sources.html">Sources</a>
+              </li>
+              <li>
+                <a href="contributors.html">Contributors</a>
+              </li>
+              <li>
+                <a href="resources.html">Downloads</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Sources</h1>
+      <p>
+        The Atlas model allows for the definition of source references on attributes,  this allows you to see how attributes from other models can be
+        incorporated into the model.  The concept of multi-source modeling ensures that we are able to pull information from multiple places together
+        and more importantly keep the meta-data around that sourcing in one place.
+      </p>
+      <p>
+        Below is a breakdown of each of the available sources in the model
+      </p>
+      <h3>MARKIT</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>MARKITENTITYTYPE</td>
+          <td>Legal Entity Sub Type</td>
+          <td>The sub-type of entity determines reporting requirements and hierarchy methodologies to be used</td>
+        </tr>
+        <tr>
+          <td>MARKITENTITYLEGALFORM</td>
+          <td>Legal Form</td>
+          <td>The legal structure for the LE.  All developed countries have their own version of corporate law that defines the types of corporations that may be formed in their country anfd how they will be registered and regulated.</td>
+        </tr>
+        <tr>
+          <td>MARKITTICKER</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>MARKITENTITYNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+        <tr>
+          <td>MARKETIDENTIFIERCODE</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+      </table>
+      <h3>MOODY??</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>RATING DATE</td>
+          <td>Rating Start Date</td>
+          <td>The earliest or beginning of period date this Rating had effect.</td>
+        </tr>
+        <tr>
+          <td>RATING STATUS</td>
+          <td>Rating Status</td>
+          <td>The state of status of Rating score.</td>
+        </tr>
+        <tr>
+          <td>RATING OUTLOOK</td>
+          <td>Rating Outlook Value</td>
+          <td>The value of the Outlook Status as provided by the Data Source</td>
+        </tr>
+      </table>
+      <h3>AVOX</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>AVOXPERCENTOWNEDBYPARENT</td>
+          <td>Ownership Percentage</td>
+          <td>The percent of ownership of a Secondary Legal Entity held by the Parent or Primary Legal Entity </td>
+        </tr>
+        <tr>
+          <td>AVOXADDRESSLINE5</td>
+          <td>Postal Address - Line 5</td>
+          <td>Supplemental Address Line.</td>
+        </tr>
+        <tr>
+          <td>AVOXCOMPANYID</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>AVOXISSUERNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+        <tr>
+          <td>AVOXADDRESSLINE2</td>
+          <td>Postal Address - Line 2</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+        </tr>
+        <tr>
+          <td>AVOXADDRESSLINE6</td>
+          <td>Postal Address - Line 6</td>
+          <td>Supplemental Address Line.</td>
+        </tr>
+        <tr>
+          <td>AVOXFSASTATUS</td>
+          <td>LE Status</td>
+          <td>The certification status of the LE.</td>
+        </tr>
+        <tr>
+          <td>AVOXPRIMARYXCHGNAME</td>
+          <td>Primary Exchange Code</td>
+          <td>Code that identifies the exchange on which the LE is listed.</td>
+        </tr>
+        <tr>
+          <td>AVOXADDRESSLINE3</td>
+          <td>Postal Address - Line 3</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+        </tr>
+        <tr>
+          <td>AVOXFSAREFNUM</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>AVOXADDRESSLINE7</td>
+          <td>Postal Address - Line 7</td>
+          <td>Supplemental Address Line.</td>
+        </tr>
+        <tr>
+          <td>AVOXENTITYTYPE</td>
+          <td>Legal Entity Sub Type</td>
+          <td>The sub-type of entity determines reporting requirements and hierarchy methodologies to be used</td>
+        </tr>
+        <tr>
+          <td>AVOXBICCODE</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>AVOXADDRESSLINE1</td>
+          <td>Postal Address - Line 1</td>
+          <td>Free form text but typically contains first line of Postal Address.</td>
+        </tr>
+        <tr>
+          <td>AVOXADDRESSLINE4</td>
+          <td>Postal Address - Line 4</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+        </tr>
+        <tr>
+          <td>AVOXTRADINGSTATUS</td>
+          <td>Trading Status</td>
+          <td>A code that indicates if a Legal Entity is tradable on any organized exchange.</td>
+        </tr>
+      </table>
+      <h3>MOODY</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>MOODYORGANIZATIONNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+        <tr>
+          <td>MOODYSISSUERID</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+      </table>
+      <h3>SNP</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>SNPENTITYNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+      </table>
+      <h3>ICB</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>ICBCOMPANYCODE</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>ICBISSUERNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+      </table>
+      <h3>BLOOMBERG</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>BLOOMBERGADDRESSLINE6</td>
+          <td>Postal Address - Line 6</td>
+          <td>Supplemental Address Line.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGCOMPANYID</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGADDRESSLINE3</td>
+          <td>Postal Address - Line 3</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGCDSTICKER</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGCORPORATETICKER</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGADDRESSLINE7</td>
+          <td>Postal Address - Line 7</td>
+          <td>Supplemental Address Line.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGADDRESSLINE2</td>
+          <td>Postal Address - Line 2</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGEXCHANGECODE</td>
+          <td>Primary Exchange Code</td>
+          <td>Code that identifies the exchange on which the LE is listed.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGADDRESSLINE1</td>
+          <td>Postal Address - Line 1</td>
+          <td>Free form text but typically contains first line of Postal Address.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGADDRESSLINE5</td>
+          <td>Postal Address - Line 5</td>
+          <td>Supplemental Address Line.</td>
+        </tr>
+        <tr>
+          <td>BBGULTPARENTEXCHANGETICKER</td>
+          <td>Primary Listing Symbol</td>
+          <td>The listing symbol for the common stock of the entity on its primary exchange listing. </td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGCOMPANYNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGADDRESSLINE4</td>
+          <td>Postal Address - Line 4</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGSTATEOFINCORP</td>
+          <td>State of Incorporation</td>
+          <td>The state in which this LE was first incorporated.</td>
+        </tr>
+        <tr>
+          <td>BLOOMBERGPARENTNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+      </table>
+      <h3>TELEKURS</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>TELEKURSADDRESSLINE3</td>
+          <td>Postal Address - Line 3</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSADDRESSLINE5</td>
+          <td>Postal Address - Line 5</td>
+          <td>Supplemental Address Line.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSURL</td>
+          <td>Web Link</td>
+          <td>The URL of a web page contain address or address-related information.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSADDRESSLINE7</td>
+          <td>Postal Address - Line 7</td>
+          <td>Supplemental Address Line.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSIBEIID</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSADDRESSLINE4</td>
+          <td>Postal Address - Line 4</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSADDRESSLINE1</td>
+          <td>Postal Address - Line 1</td>
+          <td>Free form text but typically contains first line of Postal Address.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSLEGALFORM</td>
+          <td>Legal Form</td>
+          <td>The legal structure for the LE.  All developed countries have their own version of corporate law that defines the types of corporations that may be formed in their country anfd how they will be registered and regulated.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSADDRESSLINE6</td>
+          <td>Postal Address - Line 6</td>
+          <td>Supplemental Address Line.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSADDRESSLINE2</td>
+          <td>Postal Address - Line 2</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSRCSID</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+        <tr>
+          <td>TELEKURSINSTITUTIONNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+      </table>
+      <h3>GICS</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>GICSISSUERNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+        <tr>
+          <td>GICSCOMPANYID</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+      </table>
+      <h3>REUTERS</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>REUTERSISSUERNAME</td>
+          <td>Official Business Name</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+        </tr>
+        <tr>
+          <td>REUTERSORGID</td>
+          <td>LE Identifier Value</td>
+          <td>The character string  that identifies the Legal Entity as designated by the Identifier Type.</td>
+        </tr>
+      </table>
+      <h3>??</h3>
+      <p>The following attributes are available from this source</p>
+      <p></p>
+      <table class="table">
+        <tr>
+          <th>Source Attribute</th>
+          <th>Target Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>TRADEWEBID</td>
+          <td>Web Link</td>
+          <td>The URL of a web page contain address or address-related information.</td>
+        </tr>
+      </table>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">
+          <a href="http://dataset.io">
+            <img src="img/datasetio.png" width="120" style="margin-right:30px"/>
+          </a>
+          <p>Powered By Atlas</p>
+          <p>Published at Fri Dec 28 13:56:54 EST 2012</p>
+        </p>
+      </div>
+    </div>
+    <!-- /container -->
+    <!--
+      Le javascript
+      ==================================================
+    -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

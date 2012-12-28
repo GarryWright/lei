@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Legal Entity - Business</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+          <meta content="" name="author">
+            <!-- Le styles -->
+            <link href="css/bootstrap.css" rel="stylesheet">
+              <style type='text/css'>
+                /* <![CDATA[ */
+                  body {
+                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+                  }
+                    %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}
+                  / HTML5 shim, for IE6-8 support of HTML5 elements
+                  /[if lt IE 9]
+                    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                  / Fav and touch icons
+                  %link{:href => "ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+                    %link{:href => "ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+                      %link{:href => "ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+                        %link{:href => "ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+                          %link{:href => "ico/favicon.png", :rel => "shortcut icon"}
+                /* ]]> */
+              </style>
+            </link>
+          </meta>
+        </meta>
+      </meta>
+    </meta>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">
+            <img src="img/logo.png" width="45" style="margin-right:30px"/>
+            Legal Entity Identifier 1.3.0
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="entities.html">Entities</a>
+              </li>
+              <li>
+                <a href="sources.html">Sources</a>
+              </li>
+              <li>
+                <a href="contributors.html">Contributors</a>
+              </li>
+              <li>
+                <a href="resources.html">Downloads</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Legal Entity - Business</h2>
+      <p style="margin-bottom:30px">
+        Each occurrence of Legal Entity - Business provides reference information specific to a corporation, partnership, proprietorship, trust, fund, or similar organization that has legal standing in the eyes of the law. 
+      </p>
+      <img src="node-LegalEntityBusiness.png"/>
+      <h2>Attributes</h2>
+      <p>
+        The attributes show relationships between the data group and none-group data nodes,  these are data nodes that
+        carry individual pieces of information
+      </p>
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Documentation</th>
+          <th>Sample Value</th>
+          <th>Available Sources</th>
+        </tr>
+        <tr>
+          <td>OfficialBusinessName</td>
+          <td>String</td>
+          <td>The Official Business Name, if different from the Legal Entity Name.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+            <a href="sources.html#GICS">
+              <span class="label label-info">GICS</span>
+            </a>
+            <a href="sources.html#ICB">
+              <span class="label label-info">ICB</span>
+            </a>
+            <a href="sources.html#MARKIT">
+              <span class="label label-info">MARKIT</span>
+            </a>
+            <a href="sources.html#MOODY">
+              <span class="label label-info">MOODY</span>
+            </a>
+            <a href="sources.html#REUTERS">
+              <span class="label label-info">REUTERS</span>
+            </a>
+            <a href="sources.html#SNP">
+              <span class="label label-info">SNP</span>
+            </a>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>BusinessType</td>
+          <td>Enumeration</td>
+          <td>The specific type of Business Legal Entity.</td>
+          <td>STANDARD</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>LegalForm</td>
+          <td>Enumeration</td>
+          <td>The legal structure for the LE.  All developed countries have their own version of corporate law that defines the types of corporations that may be formed in their country anfd how they will be registered and regulated.</td>
+          <td>US CORPORATION</td>
+          <td>
+            <a href="sources.html#MARKIT">
+              <span class="label label-info">MARKIT</span>
+            </a>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>StateofIncorporation</td>
+          <td>Enumeration</td>
+          <td>The state in which this LE was first incorporated.</td>
+          <td>NYS</td>
+          <td>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>RegistrationDate</td>
+          <td>Date</td>
+          <td>The initial Date of Registration</td>
+          <td>07/15/1869</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>RegistrationNumber</td>
+          <td>String</td>
+          <td>The Primary Registration Number for this Legal Entity. If registered in multiple locations, then additional Registration Numbers each stored as occurrence of Tax/Regulatory Identifier.</td>
+          <td>NYS-0567852</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>FormationDate</td>
+          <td>Date</td>
+          <td>The Date of Incorporation or establishment.</td>
+          <td>07/15/1869</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>DissolutionDate</td>
+          <td>Date</td>
+          <td>The Date the LE was officially dissolved.</td>
+          <td>N.A.</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>FiscalYearEnd</td>
+          <td>Enumeration</td>
+          <td>The Fiscal Year End Month of the LE.</td>
+          <td>12.0</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>Restrictions</td>
+          <td>String</td>
+          <td>Any restrictions against the LE.</td>
+          <td>Numerous</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>PrimaryExchangeCode</td>
+          <td>Enumeration</td>
+          <td>Code that identifies the exchange on which the LE is listed.</td>
+          <td>NYSE</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>PrimaryListingSymbol</td>
+          <td>Enumeration</td>
+          <td>The listing symbol for the common stock of the entity on its primary exchange listing. </td>
+          <td></td>
+          <td>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>TradingStatus</td>
+          <td>Enumeration</td>
+          <td>A code that indicates if a Legal Entity is tradable on any organized exchange.</td>
+          <td>TRADABLE</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>ListingStatus</td>
+          <td>Enumeration</td>
+          <td>A code that indicates if a Legal Entity is listed on any organized exchange as provided by Bloomberg.</td>
+          <td>LISTED</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>RegistrationStatus</td>
+          <td>Enumeration</td>
+          <td>Status of the entity with is registration authority.</td>
+          <td></td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>LegalEntityIndicator</td>
+          <td>Boolean</td>
+          <td>Indicates if the LE has been assigned an ISO 17442 Legal Entity Identifier.</td>
+          <td>NO</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>SovereignOwnershipIndicator</td>
+          <td>Boolean</td>
+          <td>Indicates if the LE is owned in whole or in part by a governing or sovereign authority.</td>
+          <td>NO</td>
+          <td>
+          </td>
+        </tr>
+      </table>
+      <h2>Relationships</h2>
+      <p>
+        The group relationships show relationships between this group and other data groups in the schema.
+      </p>
+      <table class="table">
+        <tr>
+          <th>Relationship</th>
+          <th>Cardinality</th>
+          <th>Target</th>
+        </tr>
+        <tr>
+          <td>Country of Incorp oration </td>
+          <td>BelongsTo</td>
+          <td>
+            <a href="node-Country.html">Country</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Country of Risk </td>
+          <td>BelongsTo</td>
+          <td>
+            <a href="node-Country.html">Country</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">
+          <a href="http://dataset.io">
+            <img src="img/datasetio.png" width="120" style="margin-right:30px"/>
+          </a>
+          <p>Powered By Atlas</p>
+          <p>Published at Fri Dec 28 13:56:56 EST 2012</p>
+        </p>
+      </div>
+    </div>
+    <!-- /container -->
+    <!--
+      Le javascript
+      ==================================================
+    -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

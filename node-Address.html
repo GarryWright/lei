@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Address</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+          <meta content="" name="author">
+            <!-- Le styles -->
+            <link href="css/bootstrap.css" rel="stylesheet">
+              <style type='text/css'>
+                /* <![CDATA[ */
+                  body {
+                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+                  }
+                    %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}
+                  / HTML5 shim, for IE6-8 support of HTML5 elements
+                  /[if lt IE 9]
+                    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                  / Fav and touch icons
+                  %link{:href => "ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+                    %link{:href => "ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+                      %link{:href => "ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+                        %link{:href => "ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+                          %link{:href => "ico/favicon.png", :rel => "shortcut icon"}
+                /* ]]> */
+              </style>
+            </link>
+          </meta>
+        </meta>
+      </meta>
+    </meta>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">
+            <img src="img/logo.png" width="45" style="margin-right:30px"/>
+            Legal Entity Identifier 1.3.0
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="entities.html">Entities</a>
+              </li>
+              <li>
+                <a href="sources.html">Sources</a>
+              </li>
+              <li>
+                <a href="contributors.html">Contributors</a>
+              </li>
+              <li>
+                <a href="resources.html">Downloads</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Address</h2>
+      <p style="margin-bottom:30px">
+        Each occurrence of Address provides one mailing, email, or web link address. The Address Type attribute designated the specific type of address. The Address Block Type specifies how individual address lines should be formatted for custom address line structuring in order to support different geographic address standards. One Address may be used or shared by any number of Individuals and/or for any number of Legal Entities.
+      </p>
+      <img src="node-Address.png"/>
+      <h2>Attributes</h2>
+      <p>
+        The attributes show relationships between the data group and none-group data nodes,  these are data nodes that
+        carry individual pieces of information
+      </p>
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Documentation</th>
+          <th>Sample Value</th>
+          <th>Available Sources</th>
+        </tr>
+        <tr>
+          <td>AddressType</td>
+          <td>Enumeration</td>
+          <td>A code that indicates if this address is POSTAL, EMAIL, WEBKLINK, PHONE NUMBER, or FAX NUMBER 1.</td>
+          <td>POSTAL</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>AddressBlockType</td>
+          <td>Enumeration</td>
+          <td>For POSTAL ADDRESS, Indicates the sequence and structure for assembling the components into a Formatted Address Block. Default is &quot;USPS.&quot;</td>
+          <td>USPS</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>AddressName</td>
+          <td>String</td>
+          <td>Address or building name</td>
+          <td>Goldman Sacks Corporate</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>PostalAddressLine1</td>
+          <td>String</td>
+          <td>Free form text but typically contains first line of Postal Address.</td>
+          <td>200 West Street</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>PostalAddressLine2</td>
+          <td>String</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>PostalAddressLine3</td>
+          <td>String</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>PostalAddressLine4</td>
+          <td>String</td>
+          <td>A free form text line containing the continuation of Postal Address, if multiple Address Lines are needed.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>PostalAddressLine5</td>
+          <td>String</td>
+          <td>Supplemental Address Line.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>PostalAddressLine6</td>
+          <td>String</td>
+          <td>Supplemental Address Line.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>PostalAddressLine7</td>
+          <td>String</td>
+          <td>Supplemental Address Line.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+            <a href="sources.html#AVOX">
+              <span class="label label-info">AVOX</span>
+            </a>
+            <a href="sources.html#BLOOMBERG">
+              <span class="label label-info">BLOOMBERG</span>
+            </a>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>PostalAddressLine8</td>
+          <td>String</td>
+          <td>Supplemental Address Line.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td>String</td>
+          <td>Free form text but could utilize/define domain of values</td>
+          <td>New York City</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>State/Province/Canton</td>
+          <td>Enumeration</td>
+          <td>Domain of values well defined e.g. US State Codes, Canada Province Codes, etc.</td>
+          <td>New York</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>ZIP/PostalCode</td>
+          <td>String</td>
+          <td>Free form text  with well defined format and domain of values for different countries</td>
+          <td>100069.0</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>GeoLocationGPSCode</td>
+          <td>String</td>
+          <td>The GPS co-ordinates for this address</td>
+          <td>21° 16' 674S</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>Locality</td>
+          <td>String</td>
+          <td>Free form text but typically the city or geographic locale </td>
+          <td>Wall Street</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>DependentorSubLocality</td>
+          <td>String</td>
+          <td>Free form text– in the US municipality</td>
+          <td>New York City</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>PhoneNumber</td>
+          <td>String</td>
+          <td>The phone number associated with this Address ID</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>FaxNumber</td>
+          <td>String</td>
+          <td>A phone number used for faxing purposes.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>EmailAddress</td>
+          <td>String</td>
+          <td>The email address associated with this Address ID</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>WebLink</td>
+          <td>String</td>
+          <td>The URL of a web page contain address or address-related information.</td>
+          <td>&lt;BLANK&gt;</td>
+          <td>
+            <a href="sources.html#TELEKURS">
+              <span class="label label-info">TELEKURS</span>
+            </a>
+            <a href="sources.html#??">
+              <span class="label label-info">??</span>
+            </a>
+          </td>
+        </tr>
+      </table>
+      <h2>Relationships</h2>
+      <p>
+        The group relationships show relationships between this group and other data groups in the schema.
+      </p>
+      <table class="table">
+        <tr>
+          <th>Relationship</th>
+          <th>Cardinality</th>
+          <th>Target</th>
+        </tr>
+        <tr>
+          <td>Country </td>
+          <td>BelongsTo</td>
+          <td>
+            <a href="node-Country.html">Country</a>
+          </td>
+        </tr>
+        <tr>
+          <td>LE Address</td>
+          <td>HasMany</td>
+          <td>
+            <a href="node-LEAddress.html">LEAddress</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">
+          <a href="http://dataset.io">
+            <img src="img/datasetio.png" width="120" style="margin-right:30px"/>
+          </a>
+          <p>Powered By Atlas</p>
+          <p>Published at Fri Dec 28 13:56:55 EST 2012</p>
+        </p>
+      </div>
+    </div>
+    <!-- /container -->
+    <!--
+      Le javascript
+      ==================================================
+    -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

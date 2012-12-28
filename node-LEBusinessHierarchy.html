@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>LE Business Hierarchy</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+          <meta content="" name="author">
+            <!-- Le styles -->
+            <link href="css/bootstrap.css" rel="stylesheet">
+              <style type='text/css'>
+                /* <![CDATA[ */
+                  body {
+                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+                  }
+                    %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}
+                  / HTML5 shim, for IE6-8 support of HTML5 elements
+                  /[if lt IE 9]
+                    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                  / Fav and touch icons
+                  %link{:href => "ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+                    %link{:href => "ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+                      %link{:href => "ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+                        %link{:href => "ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+                          %link{:href => "ico/favicon.png", :rel => "shortcut icon"}
+                /* ]]> */
+              </style>
+            </link>
+          </meta>
+        </meta>
+      </meta>
+    </meta>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">
+            <img src="img/logo.png" width="45" style="margin-right:30px"/>
+            Legal Entity Identifier 1.3.0
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="entities.html">Entities</a>
+              </li>
+              <li>
+                <a href="sources.html">Sources</a>
+              </li>
+              <li>
+                <a href="contributors.html">Contributors</a>
+              </li>
+              <li>
+                <a href="resources.html">Downloads</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>LE Business Hierarchy</h2>
+      <p style="margin-bottom:30px">
+        Each occurrence of LE Business Hierarchy identifies, names, and defines one taxonomy or organizational framework that has meaning to one Business Legal Entity. Each Business Legal Entity may establish any number of LE Business Hierarchies but each such hierarchy is defined only for that one Legal Entity. The establishment of LE Business Hierarchies is optional and a Business Legal Entity is not required to define any such structures.
+
+Each LE Business Hierarchy is in turn made up of one or more categories, sub strata, or lower-level grouping defined by occurrences of LE Business Hierarchy Category entity. There is no restriction on the type of information categorized by a Business Hierarchy as indicated by the Business Hierarchy Type attribute. For example, the hierarchy may define a specific geographic breakdown used by the Legal Entity or may provide a product breakdown by product line, etc.
+.
+      </p>
+      <img src="node-LEBusinessHierarchy.png"/>
+      <h2>Attributes</h2>
+      <p>
+        The attributes show relationships between the data group and none-group data nodes,  these are data nodes that
+        carry individual pieces of information
+      </p>
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Documentation</th>
+          <th>Sample Value</th>
+          <th>Available Sources</th>
+        </tr>
+        <tr>
+          <td>BusinessHierarchyDescription</td>
+          <td>String</td>
+          <td>A full text explanation of this Business Hierarchy.</td>
+          <td>GICS</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>BusinessHierarchyType</td>
+          <td>String</td>
+          <td>Describes the type or genre of this Business Hierarchy.</td>
+          <td>ORGANIZATION</td>
+          <td>
+          </td>
+        </tr>
+      </table>
+      <h2>Relationships</h2>
+      <p>
+        The group relationships show relationships between this group and other data groups in the schema.
+      </p>
+      <table class="table">
+        <tr>
+          <th>Relationship</th>
+          <th>Cardinality</th>
+          <th>Target</th>
+        </tr>
+        <tr>
+          <td>LE Business Hierarchy Category</td>
+          <td>HasMany</td>
+          <td>
+            <a href="node-LEBusinessHierarchyCategory.html">LEBusinessHierarchyCategory</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">
+          <a href="http://dataset.io">
+            <img src="img/datasetio.png" width="120" style="margin-right:30px"/>
+          </a>
+          <p>Powered By Atlas</p>
+          <p>Published at Fri Dec 28 13:56:56 EST 2012</p>
+        </p>
+      </div>
+    </div>
+    <!-- /container -->
+    <!--
+      Le javascript
+      ==================================================
+    -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Legal Entity Identifier</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+          <meta content="" name="author">
+            <!-- Le styles -->
+            <link href="css/bootstrap.css" rel="stylesheet"/>
+            <link href="css/style.css" rel="stylesheet">
+              <style type='text/css'>
+                /* <![CDATA[ */
+                  body {
+                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+                  }
+                    %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}
+                  / HTML5 shim, for IE6-8 support of HTML5 elements
+                  /[if lt IE 9]
+                    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                  / Fav and touch icons
+                  %link{:href => "ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+                    %link{:href => "ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+                      %link{:href => "ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+                        %link{:href => "ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+                          %link{:href => "ico/favicon.png", :rel => "shortcut icon"}
+                /* ]]> */
+              </style>
+            </link>
+          </meta>
+        </meta>
+      </meta>
+    </meta>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">
+            <img src="img/logo.png" width="45" style="margin-right:30px"/>
+            Legal Entity Identifier 1.3.0
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="entities.html">Entities</a>
+              </li>
+              <li>
+                <a href="sources.html">Sources</a>
+              </li>
+              <li>
+                <a href="contributors.html">Contributors</a>
+              </li>
+              <li>
+                <a href="resources.html">Downloads</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Legal Entity Identifier</h1>
+      <p>
+        
+      </p>
+      <img src="schema.png"/>
+      <h2>Entities</h2>
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Documentation</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-Country.html">Country</a>
+          </td>
+          <td>Each occurrence of Country names and identifies one Country that is of interest or has one or more relationships with a Legal Entity.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEGroupMember.html">LE Group Member</a>
+          </td>
+          <td>Each occurrence of LE Group Member defines one Legal Entity that is a member of one LE Group. Each individual Legal Entity may belong to any number of different LE Groups. Conversely, each LE Group may have any number of Legal Entities as its members.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LERelationshipType.html">LE Relationship Type</a>
+          </td>
+          <td>Each occurrence of LE Relationship Type name and defines a particular type of LE-to-LE Relationship that has well-defined meaning in the FIMOD. Relationships may be limited to two members only (one Legal Entity and its one Ultimate Parent) or any number of members (e.g., one Legal Entity and &quot;N&quot; other Legal Entities within a designated grouping).</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEAlternateName.html">LE Alternate Name</a>
+          </td>
+          <td>Each occurrence of LE Alternate Name provides an additional name or alias in a designated language provided by a Data Source by which a Legal Entity is known.  Every LE has one Legal Entity Name attribute that is stored on the Legal Entity and may have &quot;n&quot; number of additional alternate names.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEClassificationCategory.html">LE Classification Category</a>
+          </td>
+          <td>Each occurrence of Classification Category identifies one Legal Entity that has been categorized in a Category Grouping within a Classification Set.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LegalEntityCommon.html">Legal Entity - Common</a>
+          </td>
+          <td>Each occurrence of Legal Entity - Common provides standard information applicable to every Legal Entity. Additional attributes describing a particular type or category of Legal Entity are dependent upon the Legal Entity Type attribute and are further defined by Legal Entity - Business and Legal Entity - Individual sub-type entities.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LegalEntityIndividual.html">Legal Entity - Individual</a>
+          </td>
+          <td>Each occurrence of Legal Entity - Individual identifies, names and supplies indicative information regarding one Natural Person. Each Individual is a human being as contrasted to a Legal Person, such as a Corporation having legal standing.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-GeoRegion.html">Geo Region</a>
+          </td>
+          <td>Each occurrence of Geographic Region names and identifies one geographic area. The Geographic Area  may be within a single country or may extend across multiple countries as indicated by the Region Span attribute. Each Geographic Area  in turn has one of more Tax or Regulatory Authorities that oversee Legal Entities.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LERatings.html">LE Ratings</a>
+          </td>
+          <td>Each occurrence of LE Ratings contains one time-sensitive score or evaluation of the credit worthiness of a Legal Entity that has been published by a Data Source, usually a credit rating agency.  Each LE Rating represents that Data Source's evaluation of qualitative and quantitative information about the LE including both public and in some cases, private information obtained by the rating agency.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-ClassificationCategory.html">Classification Category</a>
+          </td>
+          <td>Each occurrence of Classification Category defines and name one well-defined grouping within a Classification Set for analyzing Legal Entities.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-Address.html">Address</a>
+          </td>
+          <td>Each occurrence of Address provides one mailing, email, or web link address. The Address Type attribute designated the specific type of address. The Address Block Type specifies how individual address lines should be formatted for custom address line structuring in order to support different geographic address standards. One Address may be used or shared by any number of Individuals and/or for any number of Legal Entities.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEIdentifier.html">LE Identifier</a>
+          </td>
+          <td>Each occurrence of LE Identifier contains one number, series of alphanumeric characters, or similar unique code provided by a Data Source that is used to identify one Legal Entity.  There may be multiple different LE Identifiers for each Legal Entity. Each different LE Identifier has a LE Identifier Type attribute that specifies the organization or body that establishes, assigns, and maintains that particular Identifier type.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-DataSource.html">Data Source</a>
+          </td>
+          <td>Each occurrence of Data Source names and identifies an orginating source of information or  data utilized within the FIMOD Legal Entity Data Model.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-CountryRegionRelationship.html">Country Region Relationship</a>
+          </td>
+          <td>Each occurrence of Country Region Relationship identifies one Country that participates in one Geographic Region.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LECorporateEvent.html">LE Corporate Event</a>
+          </td>
+          <td>Each occurrence of LE Corporate Event defines one Business Legal Entity effected by one Corporate Event. Each Corporate Event may impact one or multiple Business Legal Entities (e.g., merger, acquistion, etc.). If the Corporate Event impacts &quot;n&quot; number of LE's, then there will be &quot;n&quot; occurrence of LE Corporate Event, one for each Business LE impacted by the event.  </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEtoLERelationship.html">LE to LE Relationship</a>
+          </td>
+          <td>Each occurrence of LE to LE Relationship defines a pair of two Legal Entities that are related to each other.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-ClassificationSet.html">Classification Set</a>
+          </td>
+          <td>Each occurrence of Classification Set provides one well-defined taxonomy, hierarchy, or listing structure for organizing and analyzing Legal Entities by grouping them into one or more Classification Categories. A Legal Entity may be categorized into any number of LE Classification Set/Categories via the LE Classification Category entity.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEAddress.html">LE Address</a>
+          </td>
+          <td>Each occurrence of Legal Entity Address provides one Address for one Legal Entity for a designated period of time.  Each Legal Entity may have any number of Addresses which may be further qualified by the Address Role attribute.  The same Address may be used for any number of Individuals and/or Legal Entities.  The Individual  Address Start and End Date in conjunction with the Cycle Frequency attribute allows an address to be used for a specified period of time and then be repeated on a designated cycle, such as for a summer to be used during the summer months only on a yearly basis.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-CorporateEvent.html">Corporate Event</a>
+          </td>
+          <td>Each occurrence of Corporate Event identifies and provides summary information regarding one action, event, or activity occuring in the past or scheduled to occur in the future that has significant effect on one Business Legal Entity (e.g., Shareholder Meeting) or on multiple Business Legal Entities (e.g., merger or acquistion) as provided by one Data Source. The full terms, conditions, and detail informaton regarding the Corporate Event itself are not stored in Legal Entity Data Domain but are instead stored separately outside the domain space and are referenced by the Corporate Event ID attribute. The specific one or multiple Business LEs impacted by the Corporate Event are identified by separate occurrences of LE Corporate Event entity.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEinCountry.html">LE in Country</a>
+          </td>
+          <td>Each occurrence of Legal Entry in Country identifies one Country that is related to one Legal Entity. The LE to Country Relationship Type Code indicates the type of relationship.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEDocument.html">LE Document</a>
+          </td>
+          <td>Each occurrence of LE Document references one piece of written, printed, or electronic matter pertaining to one Legal Entity. The Document may be stored in any number of different file formats (PDF, Word, Text, HTML, etc.) as indicated by the Document File Type attribute. The actual Document contents is provided via the Document Link ID attribute.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEBusinessHierarchyCategory.html">LE Business Hierarchy Category</a>
+          </td>
+          <td>Each occurrence of LE Business Hierarchy Category identifies, names, and defines one grouping or strata within a defined LE Business Hierarchy. Each Category represents one member of an ordered set that allows that category to be &quot;above,&quot; &quot;below,&quot; or &quot;at the same level&quot; as another Category member within that same Business Hierarchy.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEBusinessHierarchy.html">LE Business Hierarchy</a>
+          </td>
+          <td>Each occurrence of LE Business Hierarchy identifies, names, and defines one taxonomy or organizational framework that has meaning to one Business Legal Entity. Each Business Legal Entity may establish any number of LE Business Hierarchies but each such hierarchy is defined only for that one Legal Entity. The establishment of LE Business Hierarchies is optional and a Business Legal Entity is not required to define any such structures.
+
+Each LE Business Hierarchy is in turn made up of one or more categories, sub strata, or lower-level grouping defined by occurrences of LE Business Hierarchy Category entity. There is no restriction on the type of information categorized by a Business Hierarchy as indicated by the Business Hierarchy Type attribute. For example, the hierarchy may define a specific geographic breakdown used by the Legal Entity or may provide a product breakdown by product line, etc.
+.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-FinancialInfo.html">Financial Info</a>
+          </td>
+          <td>Each occurrence of LE Financial Information provides time sensitive information about the monetary value or condition of a Legal Entity from a named Data Source. The information may consist of quantitative financial results, text information, or a web link to expanded information regarding one topic. The Financial Information Type and Sub Type attributes define the specific type of information provided in that occurrence.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LegalEntityBusiness.html">Legal Entity - Business</a>
+          </td>
+          <td>Each occurrence of Legal Entity - Business provides reference information specific to a corporation, partnership, proprietorship, trust, fund, or similar organization that has legal standing in the eyes of the law. </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-TaxorRegIdentifier.html">Tax or Reg Identifier</a>
+          </td>
+          <td>Each occurrence of LE Tax Identifier provides one Tax or one Regulatory Identifier that has been assigned to one LE by one Tax Authority. Each Legal Entity may have 'N&quot; number of Tax Identifiers.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-TaxorRegulatoryAuthority.html">Tax or Regulatory Authority</a>
+          </td>
+          <td>Each occurrence of Tax/Regulatory Authority identifies and names one Tax Authority or one Regulatory Agency within one Country (e.g. US) or within one Region (eg., EU) and designates one type of Tax or Regulatory Identifier issued by that authority.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="node-LEGroup.html">LE Group</a>
+          </td>
+          <td>Each occurrence of LE Group defines one group or collection consisting of one or more Legal Entities. Each individual Legal Entity may belong to any number of different LE Groups. Conversely, each LE Group may have any number of Legal Entities as its members.</td>
+        </tr>
+      </table>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">
+          <a href="http://dataset.io">
+            <img src="img/datasetio.png" width="120" style="margin-right:30px"/>
+          </a>
+          <p>Powered By Atlas</p>
+          <p>Published at Fri Dec 28 13:56:51 EST 2012</p>
+        </p>
+      </div>
+    </div>
+    <!-- /container -->
+    <!--
+      Le javascript
+      ==================================================
+    -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

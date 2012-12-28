@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>LE Document</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+          <meta content="" name="author">
+            <!-- Le styles -->
+            <link href="css/bootstrap.css" rel="stylesheet">
+              <style type='text/css'>
+                /* <![CDATA[ */
+                  body {
+                    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+                  }
+                    %link{:href => "../assets/css/bootstrap-responsive.css", :rel => "stylesheet"}
+                  / HTML5 shim, for IE6-8 support of HTML5 elements
+                  /[if lt IE 9]
+                    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                  / Fav and touch icons
+                  %link{:href => "ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+                    %link{:href => "ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+                      %link{:href => "ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+                        %link{:href => "ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+                          %link{:href => "ico/favicon.png", :rel => "shortcut icon"}
+                /* ]]> */
+              </style>
+            </link>
+          </meta>
+        </meta>
+      </meta>
+    </meta>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">
+            <img src="img/logo.png" width="45" style="margin-right:30px"/>
+            Legal Entity Identifier 1.3.0
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="entities.html">Entities</a>
+              </li>
+              <li>
+                <a href="sources.html">Sources</a>
+              </li>
+              <li>
+                <a href="contributors.html">Contributors</a>
+              </li>
+              <li>
+                <a href="resources.html">Downloads</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>LE Document</h2>
+      <p style="margin-bottom:30px">
+        Each occurrence of LE Document references one piece of written, printed, or electronic matter pertaining to one Legal Entity. The Document may be stored in any number of different file formats (PDF, Word, Text, HTML, etc.) as indicated by the Document File Type attribute. The actual Document contents is provided via the Document Link ID attribute.
+      </p>
+      <img src="node-LEDocument.png"/>
+      <h2>Attributes</h2>
+      <p>
+        The attributes show relationships between the data group and none-group data nodes,  these are data nodes that
+        carry individual pieces of information
+      </p>
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Documentation</th>
+          <th>Sample Value</th>
+          <th>Available Sources</th>
+        </tr>
+        <tr>
+          <td>DocumentBriefDescription</td>
+          <td>String</td>
+          <td>A short synopsis of the Document contents.</td>
+          <td>Corporate Bylaws</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>DocumentDate</td>
+          <td>Date</td>
+          <td>The date the Document was published.</td>
+          <td>15-May-1992</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>DocumentAuthor</td>
+          <td>String</td>
+          <td>The name of the Author of the Document</td>
+          <td>UNKNOWN</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>DocumentLinkID</td>
+          <td>String</td>
+          <td>The file ID,  URL or similar link to one LE Document.</td>
+          <td>HTTP://WWW.CORP.COM/DOC/0515199205</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>DocumentFileType</td>
+          <td>Enumeration</td>
+          <td>A code that indicates the file or technical format in which the Document is stored.</td>
+          <td>PDF</td>
+          <td>
+          </td>
+        </tr>
+      </table>
+      <h2>Relationships</h2>
+      <p>
+        The group relationships show relationships between this group and other data groups in the schema.
+      </p>
+      <table class="table">
+        <tr>
+          <th>Relationship</th>
+          <th>Cardinality</th>
+          <th>Target</th>
+        </tr>
+        <tr>
+          <td>Legal Entity </td>
+          <td>BelongsTo</td>
+          <td>
+            <a href="node-LegalEntityCommon.html">LegalEntityCommon</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">
+          <a href="http://dataset.io">
+            <img src="img/datasetio.png" width="120" style="margin-right:30px"/>
+          </a>
+          <p>Powered By Atlas</p>
+          <p>Published at Fri Dec 28 13:56:56 EST 2012</p>
+        </p>
+      </div>
+    </div>
+    <!-- /container -->
+    <!--
+      Le javascript
+      ==================================================
+    -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>
